@@ -6,7 +6,7 @@ Bienvenue dans le projet Laravel de gestion de films ! Ce projet vise à créer 
 
 1. **Clonez le repository :**
    ```bash
-   git clone https://github.com/votre-utilisateur/projet-laravel-films.git
+   git clone https://github.com/badouz/ofppt-laravel-relationships.git
    ```
 
 2. **Installez les dépendances avec Composer :**
