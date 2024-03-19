@@ -20,7 +20,8 @@ return new class extends Migration
             $table->foreign("director_id")->references("id")->on('directors');
             $table->unsignedBigInteger("category_id")->nullable();
             $table->foreign("category_id")->references("id")->on('categories');
-            
+            $table->string('image_url')->nullable();
+
             $table->timestamps();
         });
     }

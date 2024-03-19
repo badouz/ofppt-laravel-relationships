@@ -9,7 +9,7 @@ class Film extends Model
 {
     use HasFactory;
 
-    protected $fillable=["title","description","release_date","director_id","category_id","tags"];
+    protected $fillable = ["title", "description", "release_date", "director_id", "category_id", "tags", 'image'];
 
     public function category(){
         return $this->belongsTo(Category::class);

@@ -17,6 +17,6 @@ class CategorySeeder extends Seeder
         Category::create(["name" => 'Comedy']);
         Category::create(["name" => 'Drama']);
         Category::create(["name" => 'Science Fiction']);
-        Category::create(["name" => 'Advneture']);
+        Category::create(["name" => 'Adventure']);
     }
 }
