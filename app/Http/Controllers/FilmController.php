@@ -40,5 +40,21 @@ class FilmController extends Controller
             ]);
             $film->tags()->attach($request->tags);
            return "Nous avon bien ajouter le film";
+
+    }
+
+    public function edit($id)
+    {
+        // Placeholder method for editing a film
+        $film = Film::findOrFail($id);
+        return view('films.edit', compact('film'));
+    }
+
+    public function destroy($id)
+    {
+        // Placeholder method for deleting a film
+        $film = Film::findOrFail($id);
+        $film->delete();
+        return redirect()->route('films.index')->with('success', 'Film deleted successfully');
     }
 }

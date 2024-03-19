@@ -15,3 +15,6 @@ use App\Http\Controllers\FilmController;
 Route::get("films",[FilmController::class,'index'] );
 Route::get("films/create",[FilmController::class,'create']);
 Route::post("films/store",[FilmController::class,'store'])->name('films.store');
+Route::get('/edit/{id}', 'FilmController@edit')->name('film.edit');
+Route::post('/delete/{id}', 'FilmController@destroy')->name('film.destroy');
+
